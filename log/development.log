@@ -1,0 +1,320 @@
+  [1m[35m (8.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4048003910503442610);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (26.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (22.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4048003910503442610)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mUser Load (18.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "store@coderschool.vn"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_path", "price_vnd", "weight", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Nón lá"], ["description", "A wonderful conical hat that forms a perfect right circular cone which tapers smoothly from the base to the apex"], ["image_path", "non.jpg"], ["price_vnd", #<BigDecimal:7fb9bc626f38,'0.2E5',9(36)>], ["weight", 100], ["created_at", 2017-03-22 12:32:38 UTC], ["updated_at", 2017-03-22 12:32:38 UTC]]
+  [1m[35m (11.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_path", "price_vnd", "weight", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Cowboy Hat"], ["description", "A high-crowned, wide-brimmed hat best known as the defining piece of attire for the North American cowboy."], ["image_path", "cowboy.jpg"], ["price_vnd", #<BigDecimal:7fb9bc6440b0,'0.5E6',9(36)>], ["weight", 600], ["created_at", 2017-03-22 12:32:38 UTC], ["updated_at", 2017-03-22 12:32:38 UTC]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_path", "price_vnd", "weight", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "갓"], ["description", "A type of Korean traditional hat worn by men along with hanbok (Korean traditional clothing) during the Joseon period. It is made from horsehair with a bamboo frame and is partly transparent in black color.  Only married and middle class men during the late 19th century could wear gat, which represented their social status and protected their topknots (Hangul: 상투; RR: sangtu)"], ["image_path", "korean.jpg"], ["price_vnd", #<BigDecimal:7fb9bc6740d0,'0.8E5',9(36)>], ["weight", 300], ["created_at", 2017-03-22 12:32:38 UTC], ["updated_at", 2017-03-22 12:32:38 UTC]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_path", "price_vnd", "weight", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Fez"], ["description", "The fez is a felt hat of a short cylinder made of kilim fabric, usually with a tassel attached to the top. The fez owes much of its development and popularity to the Ottoman era. Also, fezes are cool!"], ["image_path", "fez.jpg"], ["price_vnd", #<BigDecimal:7fb9bc6c65d8,'0.2E6',9(36)>], ["weight", 400], ["created_at", 2017-03-22 12:32:38 UTC], ["updated_at", 2017-03-22 12:32:38 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_path", "price_vnd", "weight", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Warriors"], ["description", "The Warriors are the first team in the NBA to start 16-0. Celebrate with this cap. The structured fit will keep the hat in place while you're screaming in the stands for your Golden State Warriors!"], ["image_path", "warriors.jpg"], ["price_vnd", #<BigDecimal:7fb9bc6e5460,'0.15E7',9(27)>], ["weight", 500], ["created_at", 2017-03-22 12:32:38 UTC], ["updated_at", 2017-03-22 12:32:38 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+Started GET "/" for ::1 at 2017-03-22 19:32:44 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered collection of products/_product.html.erb [3 times] (2.0ms)
+  Rendered collection of products/_product.html.erb [3 times] (1.2ms)
+  Rendered collection of products/_product.html.erb [3 times] (0.9ms)
+  Rendered collection of products/_product.html.erb [1 times] (0.4ms)
+  Rendered visitors/index.html.erb within layouts/application (3021.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.3ms)
+  Rendered layouts/_navigation_links.html.erb (6.9ms)
+  Rendered layouts/_navigation.html.slim (16.0ms)
+  Rendered layouts/_messages.html.slim (4.2ms)
+Completed 200 OK in 3195ms (Views: 3178.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for ::1 at 2017-03-22 19:34:37 +0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered collection of products/_product.html.erb [3 times] (1.5ms)
+  Rendered collection of products/_product.html.erb [3 times] (0.7ms)
+  Rendered collection of products/_product.html.erb [3 times] (0.7ms)
+  Rendered collection of products/_product.html.erb [1 times] (0.3ms)
+  Rendered visitors/index.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation_links.html.erb (3.3ms)
+  Rendered layouts/_navigation.html.slim (9.9ms)
+  Rendered layouts/_messages.html.slim (3.3ms)
+Completed 200 OK in 79ms (Views: 76.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-03-22 19:34:42 +0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered collection of products/_product.html.erb [3 times] (1.4ms)
+  Rendered collection of products/_product.html.erb [3 times] (0.9ms)
+  Rendered collection of products/_product.html.erb [3 times] (0.9ms)
+  Rendered collection of products/_product.html.erb [1 times] (0.7ms)
+  Rendered visitors/index.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.0ms)
+  Rendered layouts/_navigation_links.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.slim (9.1ms)
+  Rendered layouts/_messages.html.slim (3.1ms)
+Completed 200 OK in 92ms (Views: 88.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-22 19:34:42 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (372.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.5ms)
+  Rendered layouts/_navigation.html.slim (10.0ms)
+  Rendered layouts/_messages.html.slim (2.6ms)
+Completed 200 OK in 441ms (Views: 427.0ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-03-22 19:35:05 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5snNweTKWySexUnQr70LL/PeJX47XwNn5lI5mKlfGxL9BwenF4QJC4alh6Phg+jqb8hTY6gK25PUA1xoMG31g==", "user"=>{"email"=>"store@coderschool.vn", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "store@coderschool.vn"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 87ms (ActiveRecord: 1.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5snNweTKWySexUnQr70LL/PeJX47XwNn5lI5mKlfGxL9BwenF4QJC4alh6Phg+jqb8hTY6gK25PUA1xoMG31g==", "user"=>{"email"=>"store@coderschool.vn", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.slim (8.3ms)
+  Rendered layouts/_messages.html.slim (2.8ms)
+Completed 200 OK in 128ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-03-22 19:35:10 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ELJ1p8GJMzo4R/ruLh/BqLFjOvdZDAGfrMzu9jM51J1w3U6OWkQKcoQmedfjJzonpxNjLy9BVvx8Bath8V0fJw==", "user"=>{"email"=>"store@coderschool.vn", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "store@coderschool.vn"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 70ms (ActiveRecord: 1.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ELJ1p8GJMzo4R/ruLh/BqLFjOvdZDAGfrMzu9jM51J1w3U6OWkQKcoQmedfjJzonpxNjLy9BVvx8Bath8V0fJw==", "user"=>{"email"=>"store@coderschool.vn", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.slim (5.9ms)
+  Rendered layouts/_messages.html.slim (2.7ms)
+Completed 200 OK in 120ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-03-22 19:35:45 +0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.9ms)
+  Rendered layouts/_navigation_links.html.erb (3.6ms)
+  Rendered layouts/_navigation.html.slim (8.9ms)
+  Rendered layouts/_messages.html.slim (2.5ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-03-22 19:36:05 +0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1E/y0oYoyCOikefoewEMQ0zPHOiBe3BLosvvImjhvl20IMn7HeXxax7wZNG2OffMWr9FMPc2JyhyAqq1qoV15w==", "user"=>{"name"=>"thinh", "email"=>"lethinh@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lethinh@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.4ms)
+  Rendered layouts/_navigation_links.html.erb (4.5ms)
+  Rendered layouts/_navigation.html.slim (12.8ms)
+  Rendered layouts/_messages.html.slim (3.3ms)
+Completed 200 OK in 186ms (Views: 74.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/users" for ::1 at 2017-03-22 19:36:14 +0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t/O/GzWgbRXwk/IqFqJ1tVOo6s0M1pebRKxPaPfbIPnXnIQyrm1UXUzycRPbmo46RdizFXqbwPiUZQr/Nb/rQw==", "user"=>{"name"=>"thinh", "email"=>"lethinh@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lethinh@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (13.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "lethinh@gmail.com"], ["encrypted_password", "$2a$10$VTFQ.Shw8HrJEiabVpaHP.Qoa7AvaUezNrCaujNOiGm.AXvyUsT86"], ["created_at", 2017-03-22 12:36:14 UTC], ["updated_at", 2017-03-22 12:36:14 UTC], ["name", "thinh"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2017-03-22 12:36:14 UTC], ["last_sign_in_at", 2017-03-22 12:36:14 UTC], ["current_sign_in_ip", "::1/128"], ["last_sign_in_ip", "::1/128"], ["updated_at", 2017-03-22 12:36:14 UTC], ["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 110ms (ActiveRecord: 20.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-22 19:36:14 +0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered collection of products/_product.html.erb [3 times] (3.4ms)
+  Rendered collection of products/_product.html.erb [3 times] (1.0ms)
+  Rendered collection of products/_product.html.erb [3 times] (0.8ms)
+  Rendered collection of products/_product.html.erb [1 times] (0.2ms)
+  Rendered visitors/index.html.erb within layouts/application (17.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation_links.html.erb (3.5ms)
+  Rendered layouts/_navigation.html.slim (11.7ms)
+  Rendered layouts/_messages.html.slim (2.8ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for ::1 at 2017-03-22 19:36:25 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/_user.html.erb (0.6ms)
+  Rendered users/_user.html.erb (0.1ms)
+  Rendered users/_user.html.erb (0.1ms)
+  Rendered users/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.slim (8.0ms)
+  Rendered layouts/_messages.html.slim (3.6ms)
+Completed 200 OK in 68ms (Views: 64.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for ::1 at 2017-03-22 19:36:33 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/_user.html.erb (0.6ms)
+  Rendered users/_user.html.erb (0.1ms)
+  Rendered users/_user.html.erb (0.2ms)
+  Rendered users/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.6ms)
+  Rendered layouts/_navigation_links.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.slim (9.4ms)
+  Rendered layouts/_messages.html.slim (3.4ms)
+Completed 200 OK in 72ms (Views: 68.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-03-22 19:36:34 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EAP7ICmHC+eI/121hTCDLhi9Ww3mdF7UAAevY1Ns/YhwbMAJskoyrzSe3oxICHihDs0C1ZA5CbfQzur0kQg2Mg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-03-22 19:36:34 +0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered collection of products/_product.html.erb [3 times] (1.1ms)
+  Rendered collection of products/_product.html.erb [3 times] (0.8ms)
+  Rendered collection of products/_product.html.erb [3 times] (0.7ms)
+  Rendered collection of products/_product.html.erb [1 times] (0.4ms)
+  Rendered visitors/index.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.8ms)
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.slim (8.7ms)
+  Rendered layouts/_messages.html.slim (3.4ms)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-22 19:36:35 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.9ms)
+  Rendered layouts/_navigation_links.html.erb (2.5ms)
+  Rendered layouts/_navigation.html.slim (8.7ms)
+  Rendered layouts/_messages.html.slim (3.4ms)
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-03-22 19:36:42 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ltXMwMo8UNaqu7GruGFpYT18rHzhk3/KmBFGMYc2GhNBnunLPdqm2te0RYD8+cZpTrIdZh+Yq6YZYDixHEMH5g==", "user"=>{"email"=>"lethinh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "lethinh@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", 2017-03-22 12:36:42 UTC], ["sign_in_count", 2], ["updated_at", 2017-03-22 12:36:42 UTC], ["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 91ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-22 19:36:42 +0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered collection of products/_product.html.erb [3 times] (2.1ms)
+  Rendered collection of products/_product.html.erb [3 times] (1.1ms)
+  Rendered collection of products/_product.html.erb [3 times] (0.7ms)
+  Rendered collection of products/_product.html.erb [1 times] (0.2ms)
+  Rendered visitors/index.html.erb within layouts/application (19.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.3ms)
+  Rendered layouts/_navigation_links.html.erb (4.8ms)
+  Rendered layouts/_navigation.html.slim (9.5ms)
+  Rendered layouts/_messages.html.slim (2.5ms)
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for ::1 at 2017-03-22 19:37:42 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/_user.html.erb (0.7ms)
+  Rendered users/_user.html.erb (0.2ms)
+  Rendered users/_user.html.erb (0.2ms)
+  Rendered users/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.6ms)
+  Rendered layouts/_navigation_links.html.erb (3.2ms)
+  Rendered layouts/_navigation.html.slim (9.5ms)
+  Rendered layouts/_messages.html.slim (2.4ms)
+Completed 200 OK in 80ms (Views: 75.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/edit" for ::1 at 2017-03-22 19:37:47 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.slim (7.5ms)
+  Rendered layouts/_messages.html.slim (3.0ms)
+Completed 200 OK in 70ms (Views: 67.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-22 19:37:53 +0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered collection of products/_product.html.erb [3 times] (1.2ms)
+  Rendered collection of products/_product.html.erb [3 times] (0.7ms)
+  Rendered collection of products/_product.html.erb [3 times] (0.6ms)
+  Rendered collection of products/_product.html.erb [1 times] (0.6ms)
+  Rendered visitors/index.html.erb within layouts/application (16.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (4.9ms)
+  Rendered layouts/_navigation_links.html.erb (7.1ms)
+  Rendered layouts/_navigation.html.slim (14.7ms)
+  Rendered layouts/_messages.html.slim (3.4ms)
+Completed 200 OK in 86ms (Views: 82.9ms | ActiveRecord: 1.1ms)
+
+
